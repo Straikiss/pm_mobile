@@ -1,0 +1,283 @@
+:root {
+    --purple: #6f42c1;
+    --green: #198754;
+    --red: #dc3545;
+    --white: #fff;
+    --gray: #f8f9fa;
+    --black: #000;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+.phone {
+    background: var(--white);
+    font-family: Arial;
+    font-size: 14px;
+    overflow: auto;
+    height: 812px;
+    width: 375px;
+}
+
+.container {
+   padding: 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.btn-accept {
+    margin-right: 15px;
+}
+
+.btn-accept-offer, .btn-view-task {
+    margin: auto;
+    width: 50%;
+}
+
+.btn-view-task {
+    background: var(--purple);
+    margin-bottom: 15px;
+}
+
+.btn-accept, .btn-accept-offer, .btn-load {
+    background: var(--green);
+}
+
+.btn-load {
+    margin-top: 15px;
+    width: 75%;
+}
+
+.btn-accept, .btn-cancel, .btn-accept-offer, .btn-view-task, .btn-load {
+    padding-bottom: 12.5px;
+    color: var(--white);
+    padding-top: 12.5px;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+}
+
+.btn-cancel {
+    background: var(--red);
+}
+
+.btn-back {
+    display: inline-block;
+    color: var(--white);
+}
+
+.company-header {
+   background: var(--purple);
+   margin-right: -15px;
+   color: var(--white);
+   margin-bottom: 15px;
+   margin-left: -15px;
+   margin-top: -15px;
+   position: fixed;
+   padding: 15px;
+   width: 100%;
+}
+
+.company-title {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+.company-text, .company-stats, .btn-accept, .btn-cancel {
+    width: 50%;
+}
+
+.company-text p, .company-stats p {
+    margin-bottom: 5px;
+}
+
+.company-text p:last-of-type, .company-stats p:last-of-type {
+    margin-bottom: 0;
+}
+
+.company-stats {
+    text-align: right;
+}
+
+.content-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.company-creator {
+    background: var(--gray);
+    margin-bottom: 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.company-creator p:first-of-type {
+    padding-left: 15px;
+    width: 50%;
+}
+
+.company-creator p:last-of-type {
+    padding-right: 15px;
+    text-align: right;
+    width: 50%;
+}
+
+.company-info {
+    background: var(--gray);
+    margin-bottom: 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 15px;
+}
+
+.company-info p {
+    margin-bottom: 10px;
+}
+
+.company-link, .offer-link {
+    color: var(--purple);
+}
+
+.offer-link {
+    margin-top: 5px;
+    display: block;
+}
+
+.content-amount {
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.company-task {
+    border: 1px solid var(--purple);
+    margin-bottom: 15px;
+    border-radius: 3px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.company-task-title {
+    margin-bottom: 10px;
+    color: var(--purple);
+}
+
+.phone-header {
+    background: var(--gray);
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+    padding: 15px;
+}
+
+.promoter {
+    color: var(--purple);
+    text-align: right;
+    display: block;
+}
+
+.phone-header-burger, .phone-header-burger-2 {
+    margin-bottom: 3px;
+    margin-left: 0px;
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 3px;
+}
+
+.phone-header-burger {
+    background: var(--purple);
+}
+
+.phone-header-burger-2 {
+    background: var(--white);
+}
+
+.phone-header-burger:last-of-type {
+    margin-bottom: 0;
+}
+
+.phone-aside {
+    background: var(--purple);
+    transform: translateX(-100%);
+    position: fixed;
+    height: 100vh;
+    width: 240px;
+    left: 0;
+    top: 0;
+}
+
+.phone-aside-menu {
+    padding: 15px;
+}
+
+.phone-aside-link {
+    padding-bottom: 15px;
+    color: var(--white);
+    padding-left: 15px;
+    padding-top: 15px;
+    display: block;
+}
+
+.phone-aside-link-active {
+    background: var(--white);
+    color: var(--purple);
+}
+
+.content-amount-text {
+    margin-top: -15px;
+}
+
+.link-more {
+    color: var(--purple);
+    font-weight: normal;
+    float: right;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.pt-77 {
+    padding-top: 77px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
