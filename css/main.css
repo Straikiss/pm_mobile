@@ -70,8 +70,7 @@ img {
 }
 
 .btn-load {
-    margin-top: 15px;
-    width: 65%;
+    width: 50%;
 }
 
 .btn-accept, .btn-cancel, .btn-accept-offer, .btn-view-task, .btn-load, .btn-attention {
@@ -213,6 +212,7 @@ img {
     position: fixed;
     padding: 15px;
     width: 345px;
+    z-index: 1;
 }
 
 .promoter {
@@ -373,7 +373,6 @@ img {
 }
 
 .start-title, .start-title-2, .start-title-3 {
-    box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.35);
     background: var(--white);
     padding-bottom: 15px;
     padding-top: 15px;
@@ -429,9 +428,8 @@ img {
 }
 
 .btn-start, .btn-start-2 {
-    box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.35);
     max-width: calc(375px / 2);
-    background: var(--green);
+    background: #00bf41;
     padding-bottom: 15px;
     color: var(--white);
     text-align: center;
@@ -468,6 +466,55 @@ img {
 
 .index-start-inside p {
     margin: 15px;
+}
+
+.index-start-inside h1 {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.news-content {
+    margin-top: 15px;
+}
+
+.news-content-image {
+    border-radius: 3px;
+    object-fit: cover;
+    height: 150px;
+}
+
+.news-content-date {
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background: var(--white);
+    color: var(--purple);
+    margin-top: -21.5px;
+    width: fit-content;
+    position: relative;
+    padding: 2.5px;
+    float: right;
+}
+
+.news-content-title {
+    margin-top: 15px;
+}
+
+.btn-read {
+    background: var(--purple);
+    color: var(--white);
+    padding-bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    display: block;
+    margin-left: 0;
+    width: 35%;
+}
+
+.ml-99 {
+    margin-left: 99px;
+    width: calc(100% - 99px);
 }
 
 @media (max-width: 425px) {
