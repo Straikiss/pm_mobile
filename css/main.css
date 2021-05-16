@@ -35,7 +35,7 @@ img {
 }
 
 .phone {
-    background: var(--white);
+    background: var(--gray);
     font-family: Arial;
     font-size: 14px;
     overflow: auto;
@@ -137,19 +137,13 @@ img {
 }
 
 .content-title {
-    margin-bottom: 10px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .company-creator {
-    background: var(--gray);
-    margin-bottom: 15px;
     margin-right: -15px;
     margin-left: -15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 15px;
 }
 
 .company-creator p:first-of-type {
@@ -175,7 +169,7 @@ img {
     margin-bottom: 10px;
 }
 
-.company-link, .offer-link {
+.offer-link {
     color: var(--purple);
 }
 
@@ -190,8 +184,13 @@ img {
     margin-top: 5px;
 }
 
+.company-stats .content-amount, .company-link {
+    color: var(--white);
+}
+
 .company-task {
-    border: 1px solid var(--purple);
+    box-shadow: 0 0 10px #dee2e6;
+    background: var(--white);
     margin-bottom: 15px;
     border-radius: 3px;
     margin-top: 15px;
@@ -204,7 +203,8 @@ img {
 }
 
 .phone-header {
-    background: var(--gray);
+    box-shadow: 0 0 10px var(--purple);
+    background: var(--purple);
     margin-left: -15px;
     margin-right: -15px;
     margin-bottom: 15px;
@@ -230,11 +230,7 @@ img {
     height: 3px;
 }
 
-.phone-header-burger {
-    background: var(--purple);
-}
-
-.phone-header-burger-2 {
+.phone-header-burger, .phone-header-burger-2 {
     background: var(--white);
 }
 
@@ -243,14 +239,42 @@ img {
 }
 
 .phone-aside {
-    background: var(--purple);
     transform: translateX(-100%);
+    background: var(--purple);
     position: fixed;
     height: 100vh;
     width: 240px;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
+}
+
+.blogger-card {
+    position: absolute;
+    bottom: 15%;
+}
+
+.blogger-card p {
+    text-align: center;
+    color: var(--white);
+} 
+
+.blogger-card-image {
+    border-radius: 3px;
+    width: 35%;
+}
+
+.btn-blogger-card {
+    color: var(--purple);
+    border-radius: 3px;
+    background: var(--white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .phone-aside-menu {
@@ -303,7 +327,12 @@ img {
 }
 
 .task-image, .task-image-download {
-    padding-right: 15px;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+
+.task-image-download:last-of-type {
+    margin-right: 0;
 }
 
 .task-image {
@@ -324,12 +353,12 @@ img {
 }
 
 .blogger-verification {
-    background: var(--gray);
+    background: var(--white);
+    box-shadow: 0 0 10px #dee2e6;
     color: var(--green);
     margin-right: -15px;
     margin-bottom: 15px;
     margin-left: -15px;
-    margin-top: -15px;
     padding: 15px;
 }
 
@@ -475,28 +504,31 @@ img {
 
 .news-content {
     margin-top: 15px;
+    background: var(--white);
+    box-shadow: 0 0 10px #dee2e6;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .news-content-image {
-    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     object-fit: cover;
-    height: 150px;
+    height: 15vh;
 }
 
 .news-content-date {
-    border-bottom-right-radius: 3px;
     border-top-left-radius: 3px;
     background: var(--white);
     color: var(--purple);
-    margin-top: -21.5px;
-    width: fit-content;
+    margin-top: -21px;
     position: relative;
-    padding: 2.5px;
+    padding: 3px;
     float: right;
 }
 
-.news-content-title {
-    margin-top: 15px;
+.new-content-inside {
+    padding: 15px;
 }
 
 .btn-read {
@@ -506,9 +538,8 @@ img {
     border-radius: 3px;
     text-align: center;
     padding-top: 10px;
-    margin-top: 10px;
-    display: block;
-    margin-left: 0;
+    margin-top: 15px;
+    display: inline-block;
     width: 35%;
 }
 
@@ -517,9 +548,37 @@ img {
     width: calc(100% - 99px);
 }
 
+.block-def {
+    box-shadow: 0 0 10px #dee2e6;
+    background: var(--white);
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.btn-view-task-link {
+    color: var(--purple);
+    font-weight: normal;
+    font-size: 14px;
+    float: right;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.company-storytelling {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--gray);
+}
+
+.company-storytelling:last-of-type {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
 @media (max-width: 425px) {
     .phone {
-        height: fit-content;
         width: 100%;
     }
     .phone-header {
