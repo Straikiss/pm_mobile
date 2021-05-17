@@ -114,10 +114,7 @@ img {
 }
 
 .company-title {
-    text-align: center;
-    padding-bottom: 5px;
-    margin-right: 15px;
-    padding-top: 5px;
+  margin-bottom: 15px;
 }
 
 .company-text, .company-stats, .btn-accept, .btn-cancel, .w-50 {
@@ -203,7 +200,6 @@ img {
 }
 
 .phone-header {
-    box-shadow: 0 0 10px var(--purple);
     background: var(--purple);
     margin-left: -15px;
     margin-right: -15px;
@@ -310,8 +306,16 @@ img {
     margin-top: 15px;
 }
 
+.mt-20 {
+    margin-top: 20px;
+}
+
 .mt-30 {
     margin-top: 30px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 .pt-77 {
@@ -363,8 +367,6 @@ img {
 }
 
 .content-blogger {
-    margin-right: 15px;
-    margin-left: 15px;
 }
 
 .content-blogger img {
@@ -381,6 +383,10 @@ img {
 
 .color-green {
     color: var(--green);
+}
+
+.color-purple {
+    color: var(--purple);
 }
 
 .attention {
@@ -558,6 +564,7 @@ img {
 .btn-view-task-link {
     color: var(--purple);
     font-weight: normal;
+    line-height: 20px;
     font-size: 14px;
     float: right;
 }
@@ -577,8 +584,50 @@ img {
     border-bottom: 0;
 }
 
+.aside-logo-svg {
+    background: url(https://postmarket.pro/content/promoter/image/home/logo/logo.svg) no-repeat;
+    position: absolute;
+    margin-right: 75px;
+    margin-left: 75px;
+    display: block;
+    height: 40px;
+    bottom: 20px;
+    width: 90px;
+}
+
+.settings-link {
+    margin-bottom: 15px;
+    color: var(--purple);
+    display: block;
+}
+
+.settings-link:last-of-type {
+    margin-bottom: 0;
+}
+
+.settings-version {
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+    left: 25%;
+}
+
+.settings-version p {
+    margin-bottom: 5px;
+}
+
+.settings-version p:last-of-type {
+    margin-bottom: 0;
+}
+
+.color-red {
+    color: var(--red);
+}
+
 @media (max-width: 425px) {
     .phone {
+        height: 100%;
         width: 100%;
     }
     .phone-header {
