@@ -69,17 +69,24 @@ img {
     background: var(--green);
 }
 
-.btn-load {
+.btn-load, .btn-partner {
     width: 50%;
 }
 
-.btn-accept, .btn-cancel, .btn-accept-offer, .btn-view-task, .btn-load, .btn-attention {
+.btn-accept, .btn-cancel, .btn-accept-offer, .btn-view-task, .btn-load, .btn-attention, .btn-partner {
     padding-bottom: 12.5px;
     color: var(--white);
     padding-top: 12.5px;
     text-align: center;
     border-radius: 3px;
     display: block;
+}
+
+.btn-partner {
+    background: var(--green);
+    padding-right: 15px;
+    padding-left: 15px;
+    width: fit-content;
 }
 
 .btn-cancel {
@@ -178,7 +185,6 @@ img {
 .content-amount {
     margin-bottom: 15px;
     font-weight: bold;
-    margin-top: 5px;
 }
 
 .company-stats .content-amount, .company-link {
@@ -260,6 +266,12 @@ img {
     width: 35%;
 }
 
+.partner-link {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+
 .btn-blogger-card {
     color: var(--purple);
     border-radius: 3px;
@@ -300,6 +312,7 @@ img {
     color: var(--purple);
     font-weight: normal;
     float: right;
+    height: 17px;
 }
 
 .mt-15 {
@@ -623,6 +636,11 @@ img {
 
 .color-red {
     color: var(--red);
+}
+
+.blogger-money {
+    color: var(--purple);
+    float: right;
 }
 
 @media (max-width: 425px) {
